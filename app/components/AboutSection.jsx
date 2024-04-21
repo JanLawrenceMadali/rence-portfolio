@@ -60,6 +60,9 @@ const TAB_DATA = [
     content: (
       <ul className="pl-2 list-disc">
         <li>Laravel PHP Framework Course</li>
+        <li>React Native Webinar</li>
+        <li>Python Django Webinar</li>
+        <li>Microsoft Azure Fundamentals</li>
       </ul>
     ),
   },
