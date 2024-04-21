@@ -16,15 +16,13 @@ const HeroSection = () => {
             <br />
             <TypeAnimation className="text-gray-800 dark:text-white"
               sequence={[
-                "Rence",
+                "Jan Lawrence Madali",
                 1000,
                 "a Web Developer",
                 1000,
                 "a Web App Developer",
                 1000,
                 "a Gamer",
-                1000,
-                "a Anime Fan",
                 1000
               ]}
               wrapper="span"
@@ -49,7 +47,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="col-span-12 mt-4 mb-6 sm:col-span-5 place-self-center lg:m-0">
-          <div className="rounded-full bg-gradient-to-br from-lime-500 via-green-500 to-emerald-500 w-[350px] lg:w-[400px] h-[350px] lg:h-[400px] relative overflow-hidden">
+          <div className="rounded-full bg-gradient-to-br from-lime-500 via-green-500 to-emerald-500 w-[250px] sm:w-[350px] lg:w-[400px] h-[250px] sm:h-[350px] lg:h-[400px] relative overflow-hidden">
             <Image
               src={gradPic}
               alt="grad-pic"
