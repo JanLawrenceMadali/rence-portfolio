@@ -18,15 +18,11 @@ const EmailSection = () => {
     const JSONdata = JSON.stringify(data);
     const endpoint = "/api/send";
 
-    // Form the request for sending data to the server.
     const options = {
-      // The method is POST because we are sending data.
       method: "POST",
-      // Tell the server we're sending JSON.
       headers: {
         "Content-Type": "application/json",
       },
-      // Body of the request is the JSON data we created above.
       body: JSONdata,
     };
 
@@ -42,7 +38,7 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid grid-cols-1 gap-4 py-24 my-12 md:grid-cols-2"
+      className="grid items-center grid-cols-1 gap-4 py-24 my-12 md:grid-cols-2"
     >
       <div>
         <h5 className="my-2 text-xl font-bold text-white">
@@ -58,72 +54,23 @@ const EmailSection = () => {
           <Link href="https://github.com/JanLawrenceMadali" target="_blank">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="https://www.linkedin.com/in/jan-lawrence-madali" target="_blank">
+          <Link
+            href="https://www.linkedin.com/in/jan-lawrence-madali"
+            target="_blank"
+          >
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
       </div>
       <div>
-        {emailSubmitted ? (
-          <p className="mt-2 text-sm text-green-500">
-            Email sent successfully!
-          </p>
-        ) : (
-          <form className="flex flex-col" onSubmit={handleSubmit}>
-            <div className="mb-6">
-              <label
-                htmlFor="email"
-                className="block mb-2 text-sm font-medium text-white"
-              >
-                Your email
-              </label>
-              <input
-                name="email"
-                type="email"
-                id="email"
-                required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="your_email@gmail.com"
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                htmlFor="subject"
-                className="block mb-2 text-sm font-medium text-white"
-              >
-                Subject
-              </label>
-              <input
-                name="subject"
-                type="text"
-                id="subject"
-                required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Just saying hi"
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                htmlFor="message"
-                className="block mb-2 text-sm font-medium text-white"
-              >
-                Message
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Let's talk about..."
-              />
-            </div>
-            <button
-              type="submit" disabled
-              className="bg-green-500 cursor-not-allowed hover:bg-green-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
-            >
-              Send Message
-            </button>
-          </form>
-        )}
+        {/* <button className="w-full px-5 py-4 font-medium text-white bg-green-500 rounded-lg hover:bg-green-600"> */}
+        <a
+          className="block w-full px-5 py-4 font-medium text-center text-white bg-green-500 rounded-lg hover:bg-green-600"
+          href="mailto:jan.lawrence.madali@gmail.com"
+        >
+          Send me a message!😁
+        </a>
+        {/* </button> */}
       </div>
     </section>
   );
