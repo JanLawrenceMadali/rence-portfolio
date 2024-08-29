@@ -9,37 +9,42 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <ul className="pl-2 list-disc">
           <li>HTML</li>
           <li>CSS</li>
           <li>Tailwind CSS</li>
+          <li>Material UI</li>
+          <li>Bootstrap</li>
           <li>JavaScript</li>
           <li>TypeScript</li>
-          <li>React.js</li>
-          <li>Next.js</li>
-          <li>Angular.js 13+</li>
+        </ul>
+        <ul className="pl-2 list-disc">
           <li>Alpine.js</li>
-        </ul>
-        <ul className="pl-2 list-disc">
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>REST Api</li>
-          <li>MongoDB</li>
-          <li>Firebase</li>
-          <li>PHP</li>
+          <li>React.js</li>
+          <li>Angular.js 13+</li>
+          <li>Vue.js</li>
+          <li>JQuery</li>
+          <li>Ajax</li>
           <li>Laravel Livewire</li>
-          <li>Laravel</li>
-          <li>MySQL</li>
         </ul>
         <ul className="pl-2 list-disc">
+          <li>Laravel</li>
+          <li>Rest API</li>
+          <li>Node.js</li>
+          <li>MySQL</li>
+          <li>Firebase</li>
+          <li>MongoDB</li>
           <li>OOP</li>
+        </ul>
+        <ul className="pl-2 list-disc">
+          <li>Agile</li>
           <li>Git</li>
+          <li>Github</li>
           <li>Adaptability</li>
           <li>Problem-solving</li>
           <li>Teamwork</li>
           <li>Communication</li>
-          <li>Attention to Detail</li>
         </ul>
       </div>
     ),

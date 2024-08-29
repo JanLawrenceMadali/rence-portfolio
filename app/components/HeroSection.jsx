@@ -44,7 +44,7 @@ const HeroSection = () => {
               <a
                 download
                 target="_blank"
-                href="/files/JanLawrenceMadaliCV.pdf"
+                href="/files/Jan Lawrence Madali - CV.pdf"
                 className="block px-5 py-2 text-gray-900 rounded-full bg-white/90 hover:bg-white dark:bg-gray-950 dark:text-white dark:hover:bg-gray-900"
               >
                 Download CV

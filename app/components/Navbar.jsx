@@ -43,7 +43,7 @@ function Navbar() {
           href={"/"}
           className="font-mono text-xl font-semibold text-gray-800 uppercase lg:text-3xl dark:text-white"
         >
-          dev.Rence
+          Rence.Dev
         </Link>
         {currentTheme === "dark" ? (
           <button>
